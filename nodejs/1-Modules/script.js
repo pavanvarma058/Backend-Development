@@ -10,3 +10,12 @@ fs.readFile('notes.txt', 'utf-8', (err, data)=>{
 
 const content = fs.readFileSync('notes.txt', 'utf-8');
 console.log(content);
+
+// creates a new directory
+fs.mkdirSync('games', {recursive: true});
+
+// removes the directory
+fs.rmdirSync('games');
+
+// removes the file
+fs.unlinkSync('copy.txt');
